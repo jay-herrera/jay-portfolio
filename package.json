@@ -1,22 +1,33 @@
 {
-  "name": "jay-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@types/node": "20.5.0",
-    "@types/react": "18.2.20",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.16",
-    "next": "13.4.16",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.1.6"
-  }
+	"name": "jay-portfolio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"start": "next dev",
+		"build": "next build",
+		"serve": "next start",
+		"lint": "eslint . --max-warnings=0",
+		"printip": "ifconfig | grep \"inet \" | grep -Fv 127.0.0.1 | awk '{print $2}'"
+	},
+	"dependencies": {
+		"eslint": "8.47.0",
+		"eslint-config-next": "13.4.16",
+		"next": "13.4.16",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"typescript": "5.1.6"
+	},
+	"devDependencies": {
+		"@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+		"@types/node": "^20.2.5",
+		"@types/react": "^18.2.5",
+		"eslint": "^8.43.0",
+		"eslint-config-next": "^13.4.7",
+		"eslint-config-prettier": "^8.7.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint-plugin-react": "^7.32.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-sort-keys-fix": "^1.1.2",
+		"prettier": "^2.8.4"
+	}
 }
